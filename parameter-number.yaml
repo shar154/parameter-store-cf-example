@@ -13,7 +13,7 @@ Resources:
     Properties:
       Name: /MyApp/MyNumberParameter
       Description: Number parameter example
-      Type: String
+      Type: Number
       Value: !Ref NumberParameter
 
 Outputs:
