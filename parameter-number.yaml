@@ -15,8 +15,3 @@ Resources:
       Description: Number parameter example
       Type: Number
       Value: !Ref NumberParameter
-
-Outputs:
-  ParameterName:
-    Description: The name of the created SSM Parameter.
-    Value: !Ref MyNumberParameter
