@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: CloudFormation template to create an SSM Parameter of type Number
+
+Parameters:
+  NumberParameter:
+    Description: Enter a number value for the parameter.
+    Type: Number
+    Default: 42
+
+Resources:
+  MyNumberParameter:
+    Type: AWS::SSM::Parameter
+    Properties:
+      Name: /MyApp/MyNumberParameter
+      Description: Number parameter example
+      Type: String
+      Value: !Ref NumberParameter
+
+Outputs:
+  ParameterName:
+    Description: The name of the created SSM Parameter.
+    Value: !Ref MyNumberParameter
